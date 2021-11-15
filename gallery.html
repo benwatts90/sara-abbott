@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- My stylesheet -->
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+<title>Portfolio</title>
+    
+<link rel="stylesheet" a href="stylesheet.css">
+    
+</head>
+    
+<body>
+    
+<div id="nav-bar">
+    <p id="page-title">Welcome to my page</p>
+    
+<div id="nav-bar-socials">
+    <img onclick="fbOpen()" id="social-link" src="images/icons/facebookicon.png">
+    <img onclick="instaOpen()" id="social-link" src="images/icons/instagramicon.png">
+    <a href="mailto:saraabbottstudio@gmail.com"><img id="mail-social-link" src="images/icons/emailicon.png"></a>
+    <a href="tel:+447766168027"><img id="social-link" src="images/icons/phone-icon.png"></a>
+</div>
+</div>
+    
+<div id="content-container">
+        <img id="sara-pic" src="images/sara-profile.jpg" alt="sara-abbott-profile-image">
+    
+        <p class="container reveal">
+        What is it you plan to do with your one wild and precious life?
+        <br><br>
+        I’ve lived with this clipping pinned to my wall or stuck in a scrap book for so many years now I don’t remember where it originally came from, yet it’s been a constant inspiration, a daily reminder to make every day count. I choose to live nomadically and move my studio often, so I can get to know different places and people.  I choose to live as off grid as I can and to walk lightly on the Earth, cutting my consumption and what I leave behind to a minimum.  However, I do need a studio, a place to paint and currently I'm based in the Pennine town of Hebden Bridge, Bronte country.
+        <br><br>
+        My primary field is that of canine portraiture and I've been professionally creating paintings to commission of dogs, race horses and all other animals for 20 years.  My approach of visiting my clients and their animals, to get a feel of the relationship between both and a sense of character of the subjects, as well as a gentle photoshoot, is an important ingredient in my work and I believe, makes it just that bit more special.  It also means I'm emotionally invested in the whole connection: the meeting, the photoshoot, the act of creating the work and finally delivering the finished piece.  It's a very rewarding use of my days.
+        <br><br>
+        Landscape works are calling out to me more as time moves along, finding my place in the stream of time - literally. I enjoy creating these en plein air and working on a series documenting an adventure, a visit to a place I've never been before.  Painting like this, really looking at the horizon line, the tone of the sky, cements the topography in your mind's eye.
+        <br><br>
+        I've been a professional artist for 20 years and feel very fortunate to have had the opportunity and been blessed with the determination to work towards this, as a way of saying thank you I donate part of my fee from the animal portraits to rescue organisations.  I would be too emotionally vulnerable working on the front line with animals in need but I can financially support those who do.
+        <br><br>
+        I'm also interested in hearing from different charities or groups of people working for the well being of souls in trouble, recently I created a collection of bird paintings for 'Blue Highland Bird Rescue' in Brora, Scotland where half of the sale price of each work was given to the rescue.  I similarly worked with 'Footprints Animal Sanctuary' in Madeley and am keen to work like this more.
+        </p>
+</div>
+    
+<div class="container-fluid" id="gallery-link-container">
+    <a href="domestic_animals.html" class="container reveal" id="portfolio-link">
+        <p id="portfolio-link-txt">Formal oil on canvas animal portraits</p>
+            <img id="portfolio-link-img" src="images/domestic-animals/12.jpg">
+    </a>
+
+    <a href="landscapes.html" class="container reveal" id="portfolio-link">
+        <p id="portfolio-link-txt">Landscapes</p>
+        <img id="portfolio-link-img" src="images/landscapes/Our-side-of-the-valley-oil-spray-acrylic-100-x100cm-framed-in-white-%C2%A31250.jpg">
+    </a>
+    
+    
+    <a href="human_figure.html" class="container reveal" id="portfolio-link">
+        <p id="portfolio-link-txt">Human Figure</p>
+            <img id="portfolio-link-img" src="images/human-figure/Plum-oil-on-canvas-20-x-20-inches-private-commission.jpg">
+    </a>
+    
+    <a href="decorative_animals.html" class="container reveal" id="portfolio-link">
+        <p id="portfolio-link-txt">Decorative birds and animals</p>
+        <img id="portfolio-link-img" src="images/decorative-animals/1.jpg">
+    </a>
+    
+    <a href="loose-sketches-on-paper.html" class="container reveal" id="portfolio-link">
+        <p id="portfolio-link-txt">Loose Sketches on Paper</p>
+        <img id="portfolio-link-img" src="images/loose-sketches-on-paper/129310503_3543463799079692_5568874541612744152_o.jpg">
+    </a>
+    
+    <a href="gratitudes.html" class="container reveal" id="portfolio-link">
+        <p id="portfolio-link-txt">Gratitudes</p>
+        <img id="portfolio-link-img" src="images/Cernunnos.jpg">
+    </a>
+</div>
+    
+<footer>
+<div id="footer-socials">
+    <img onclick="fbOpen()" id="social-link" src="images/icons/facebookicon.png">
+        <img onclick="instaOpen()" id="social-link" src="images/icons/instagramicon.png">
+            <a href="mailto:saraabbottstudio@gmail.com"><img id="mail-social-link" src="images/icons/emailicon.png"></a>
+                <a href="tel:+447766168027"><img id="social-link" src="images/icons/phone-icon.png"></a>
+</div>
+    
+<p onclick="pagesOpen()" id="pages-link">Website designed by Pages by Ben</p>
+</footer>
+        
+<script language="Javascript">
+window.addEventListener('scroll', reveal);
+    
+function reveal(){
+    var reveals = document.querySelectorAll('.reveal');
+    
+    for(var i = 0; i < reveals.length; i++){
+        
+        var windowHeight = window.innerHeight;
+        var revealtop = reveals[i].getBoundingClientRect().top;
+        var revealpoint = 150;
+        
+        if(revealtop < windowHeight - revealpoint){
+            reveals[i].classList.add('active');
+        }
+        else{
+            reveals[i].classList.remove('active');
+        }
+    }
+}
+ 
+function fbOpen() {
+window.open("https://www.facebook.com/saraabbottstudio");
+}
+    
+function instaOpen() {
+window.open("https://www.instagram.com/sara.abbott.studio/?hl=en");
+}
+
+function pagesOpen() {
+    window.open("https://www.pagesbyben.com/");
+}
+    
+$(document).ready(function(){
+    $("#sara-pic").fadeIn(3000);
+});
+    
+$(document).ready(function(){
+    $("#content-container").slideDown(3000);
+});
+    
+$(document).ready(function(){
+    $("#page-title").fadeIn(3000);
+});
+</script>    
+</body>
+</html>
