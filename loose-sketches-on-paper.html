@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <!-- Latest compiled and minified CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+            <!-- Latest compiled JavaScript -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+                <link rel="stylesheet" a href="stylesheet.css">
+<title>Loose Sketches on Paper</title>
+</head>
+    
+<body>
+<div id="nav-bar">
+    <p id="page-title">Loose Sketches on Paper</p>
+        <a href="gallery.html"><p id="nav-bar-links">Home</p></a>
+    
+<div id="nav-bar-socials">
+    <img onclick="fbOpen()" id="social-link" src="images/icons/facebookicon2.png">
+    <img onclick="instaOpen()" id="social-link" src="images/icons/instagramicon2.png">
+    <a href="mailto:saraabbottstudio@gmail.com"><img id="mail-social-link" src="images/icons/emailicon2.png"></a>
+    <a href="tel:+447766168027"><img id="social-link" src="images/icons/phone-icon2.png"></a>
+</div>
+</div>
+    
+    
+<div id="myModal" class="modal">
+    
+    <span class="close-cursor" onclick="closeModal()">&times;</span>
+            
+            <div class="modal-content">
+                    
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+                        <img class="slides" src="images/loose-sketches-on-paper/129310503_3543463799079692_5568874541612744152_o.jpg">
+                
+                        <img class="slides" src="images/loose-sketches-on-paper/130080390_3551652018260870_8799523652427786715_o.jpg">
+                
+                        <img class="slides" src="images/loose-sketches-on-paper/150911370_3735688156523921_6121018837607637887_n.jpg">
+                
+                        <img class="slides" src="images/loose-sketches-on-paper/152469607_3744884262270977_7823343701404603942_n.jpg">
+                
+                        <img class="slides" src="images/loose-sketches-on-paper/157928421_3785883598171043_3097191011813045057_n.jpg">
+                
+                        <img class="slides" src="images/loose-sketches-on-paper/20191215_145010.jpg">
+                
+                        <img class="slides" src="images/loose-sketches-on-paper/79239259_2643863842373030_5245387981727989760_o.jpg">
+                
+                        <img class="slides" src="images/loose-sketches-on-paper/86187895_2767174356708644_6708661886113546240_o.jpg">
+                        
+                        <img class="slides" src="images/loose-sketches-on-paper/89747862_2832313756861370_7539984004896784384_n.jpg">
+                
+                        <img class="slides" src="images/loose-sketches-on-paper/93840244_2911584325600979_5554480062008393728_n.jpg">
+                
+                        <img class="slides" src="images/loose-sketches-on-paper/Baxter%20and%20Dylan.jpg">
+                
+                        <img class="slides" src="images/loose-sketches-on-paper/Sky.jpg">
+                
+            </div>
+</div>
+    
+<div id="content-container">
+    
+    <p>
+    Contemporary yet classic, my 'Loose Sketches on Paper' are created in oil and spray paint with the use of graphite too. On A2 coloured or plain heavy paper, these works are sent rolled in a tube ready for you to frame under glass. If you are local to my studio I can offer a photoshoot as part of the service, those further afield need to send detail rich, large file images.   
+    </p>
+    
+</div>
+
+<div class="row" id="image-grid">
+    <div class="col-sm-4" id="img_grid_col_1">
+         <img onclick="openModal(); currentSlide(1)" id="grid-img" src="images/loose-sketches-on-paper/129310503_3543463799079692_5568874541612744152_o.jpg" style="margin-bottom: 24px">
+        <img onclick="openModal(); currentSlide(2)" id="grid-img" src="images/loose-sketches-on-paper/130080390_3551652018260870_8799523652427786715_o.jpg" style="margin-bottom: 24px">
+        <img onclick="openModal(); currentSlide(3)" id="grid-img" src="images/loose-sketches-on-paper/150911370_3735688156523921_6121018837607637887_n.jpg" style="margin-bottom: 24px">
+        <img onclick="openModal(); currentSlide(4)" id="grid-img" src="images/loose-sketches-on-paper/152469607_3744884262270977_7823343701404603942_n.jpg" style="margin-bottom: 26px">
+        <img onclick="openModal(); currentSlide(8)" id="grid-img" src="images/loose-sketches-on-paper/86187895_2767174356708644_6708661886113546240_o.jpg" style="margin-bottom: 20px">
+    </div>
+    
+    <div class="col-sm-4" id="img_grid_col_2">
+        <img onclick="openModal(); currentSlide(5)" id="grid-img" src="images/loose-sketches-on-paper/157928421_3785883598171043_3097191011813045057_n.jpg" style="margin-bottom: 20px">
+        <img onclick="openModal(); currentSlide(6)" id="grid-img" src="images/loose-sketches-on-paper/20191215_145010.jpg" style="margin-bottom: 20px">
+        <img onclick="openModal(); currentSlide(7)" id="grid-img" src="images/loose-sketches-on-paper/79239259_2643863842373030_5245387981727989760_o.jpg" style="margin-bottom: 20px">
+    </div>
+    
+    <div class="col-sm-4" id="img_grid_col_3">
+        <img onclick="openModal(); currentSlide(9)" id="grid-img" src="images/loose-sketches-on-paper/89747862_2832313756861370_7539984004896784384_n.jpg" style="margin-bottom: 16px">
+        <img onclick="openModal(); currentSlide(10)" id="grid-img" src="images/loose-sketches-on-paper/93840244_2911584325600979_5554480062008393728_n.jpg" style="margin-bottom: 16px">
+        <img onclick="openModal(); currentSlide(11)" id="grid-img" src="images/loose-sketches-on-paper/Baxter%20and%20Dylan.jpg" style="margin-bottom: 16px">
+        <img onclick="openModal(); currentSlide(12)" id="grid-img" src="images/loose-sketches-on-paper/Sky.jpg" style="margin-bottom: 20px">
+    </div>
+</div>
+
+<div class="container-fluid" id="gallery-link-container">
+        
+    <a href="domestic_animals.html" class="container reveal" id="portfolio-link">
+        <p id="portfolio-link-txt">Formal Oil on Canvas Animal Portraits</p>
+            <img id="portfolio-link-img" src="images/domestic-animals/12.jpg">
+    </a>
+
+    <a href="landscapes.html" class="container reveal" id="portfolio-link">
+        <p id="portfolio-link-txt">Landscapes</p>
+        <img id="portfolio-link-img" src="images/landscapes/Our-side-of-the-valley-oil-spray-acrylic-100-x100cm-framed-in-white-%C2%A31250.jpg">
+    </a>
+    
+    <a href="loose-sketches-on-paper.html" class="container reveal" id="portfolio-link">
+        <p id="portfolio-link-txt">Loose Sketches on Paper</p>
+        <img id="portfolio-link-img" src="images/loose-sketches-on-paper/129310503_3543463799079692_5568874541612744152_o.jpg">
+    </a>
+    
+    <a href="decorative_animals.html" class="container reveal" id="portfolio-link">
+        <p id="portfolio-link-txt">Decorative Birds and Animals</p>
+        <img id="portfolio-link-img" src="images/decorative-animals/1.jpg">
+    </a>
+    
+    <a href="human_figure.html" class="container reveal" id="portfolio-link">
+        <p id="portfolio-link-txt">Human Figure</p>
+            <img id="portfolio-link-img" src="images/human-figure/Plum-oil-on-canvas-20-x-20-inches-private-commission.jpg">
+    </a>
+    
+    <a href="gratitudes.html" class="container reveal" id="portfolio-link">
+        <p id="portfolio-link-txt">Gratitudes</p>
+        <img id="portfolio-link-img" src="images/Cernunnos.jpg">
+    </a>
+</div>
+<footer>
+<div id="footer-socials">
+    <img onclick="fbOpen()" id="social-link" src="images/icons/facebookicon.png">
+        <img onclick="instaOpen()" id="social-link" src="images/icons/instagramicon.png">
+            <a href="mailto:saraabbottstudio@gmail.com"><img id="mail-social-link" src="images/icons/emailicon.png"></a>
+                <a href="tel:+447766168027"><img id="social-link" src="images/icons/phone-icon.png"></a>
+</div>
+    
+<p onclick="pagesOpen()" id="pages-link">Website designed by Pages by Ben</p>
+    
+</footer>
+    
+<script language="Javascript">
+function openModal() {
+    document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal() {
+    document.getElementById("myModal").style.display = "none";
+}
+    
+var slideIndex = 1;
+showSlides(slideIndex);
+    
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+    
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+    
+function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("slides");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    
+slides[slideIndex-1].style.display = "block";
+}
+
+window.addEventListener('scroll', reveal);
+    
+function reveal(){
+    var reveals = document.querySelectorAll('.reveal');
+    
+    for(var i = 0; i < reveals.length; i++){
+        
+        var windowHeight = window.innerHeight;
+        var revealtop = reveals[i].getBoundingClientRect().top;
+        var revealpoint = 150;
+        
+        if(revealtop < windowHeight - revealpoint){
+            reveals[i].classList.add('active');
+        }
+        else{
+            reveals[i].classList.remove('active');
+        }
+    }
+}
+
+function fbOpen() {
+    window.open("https://www.facebook.com/saraabbottstudio");
+}
+    
+function instaOpen() {
+    window.open("https://www.instagram.com/sara.abbott.studio/?hl=en")
+}
+    
+$(document).ready(function(){
+    $("#page-title").fadeIn(3000);
+});
+    
+$(document).ready(function(){
+    $("#content-container").slideDown(1500);
+});
+</script>
+</body>
