@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <!-- Latest compiled and minified CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+            <!-- Latest compiled JavaScript -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+                <link rel="stylesheet" a href="stylesheet.css">
+<title>Landscapes</title>
+</head>
+    
+<body>
+    
+<div id="nav-bar">
+    <p id="page-title">Landscapes</p>
+        <a href="gallery.html"><p id="nav-bar-links">Home</p></a>
+    
+<div id="nav-bar-socials">
+    <img onclick="fbOpen()" id="social-link" src="images/icons/facebookicon2.png">
+    <img onclick="instaOpen()" id="social-link" src="images/icons/instagramicon2.png">
+    <a href="mailto:saraabbottstudio@gmail.com"><img id="mail-social-link" src="images/icons/emailicon2.png"></a>
+    <a href="tel:+447766168027"><img id="social-link" src="images/icons/phone-icon2.png"></a>
+</div>
+</div>
+    
+        <div id="myModal" class="modal">
+            <span class="close-cursor" onclick="closeModal()">&times;</span>
+            
+                <div class="modal-content">
+                    
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    
+                        <!-- Array of images for modals -->
+                        <!-- Column 2 -->
+                        <!-- 1 -->
+                        <img class="slides" src="images/landscapes/2.jpg">
+                        <!-- 2 -->
+                        <img class="slides" src="images/landscapes/A-carved-path-oil-spray-acrylic-size-box-framed-in-white-%C2%A3950.jpg">
+                        <!-- 3 -->
+                        <img class="slides" src="images/landscapes/12.jpg">
+                        <!-- 4 -->
+                        <img class="slides" src="images/landscapes/14%20sm%20file.jpg">
+                        <!-- 5 -->
+                        <img class="slides" src="images/landscapes/15.jpg">
+                        <!-- 6 -->
+                        <img class="slides" src="images/landscapes/19.jpg">
+                        <!-- 7 -->
+                        <img class="slides" src="images/landscapes/27.jpg">
+                        <!-- 8 -->
+                        <img class="slides" src="images/landscapes/72dpi%20Hedgerow.jpg">
+                        <!-- 9 -->
+                        <img class="slides" src="images/landscapes/2354-Sara-Abbott-Scotland.jpg">
+                        <!-- 10 -->
+                        <img class="slides" src="images/landscapes/2359-Sara-Abbott-Scotland.jpg">
+                        <!-- 11 -->
+                        <img class="slides" src="images/landscapes/2361-Sara-Abbott-Scotland.jpg">
+                        <!-- 12 -->
+                        <img class="slides" src="images/landscapes/2363-Sara-Abbott-Scotland.jpg">
+                        <!-- 13 -->
+                        <img class="slides" src="images/landscapes/2373-Sara-Abbott-Scotland.jpg">
+                        <!-- 14 -->
+                        <img class="slides" src="images/landscapes/2378-Pano-2.jpg">
+                        <!-- 15 -->
+                        <img class="slides" src="images/landscapes/2377-Sara-Abbott-Scotland.jpg">
+                        <!-- 16 -->
+                        <img class="slides" src="images/landscapes/2381-Sara-Abbott-Scotland.jpg">
+                    
+                        <!-- Column 2 -->
+                        <!-- 17 -->
+                        <img class="slides" src="images/landscapes/2385-Sara-Abbott-Scotland.jpg">
+                        <!-- 18 -->
+                        <img class="slides" src="images/landscapes/72dpi%20river%20perry.jpg">
+                        <!-- 19 -->
+                        <img class="slides" src="images/landscapes/100060018_3002533109839433_2979171530493132800_n.jpg">
+                        <!-- 20 -->
+                        <img class="slides" src="images/landscapes/100090001_3002532659839478_2444299350243803136_n.jpg">
+                        <!-- 21 -->
+                        <img class="slides" src="images/landscapes/A-Memory-of-Bees-trip-tic-oil-spray-on-stainless-steel-each-part-12-inches-sq-plus-frame-%C2%A3750-SOLD.jpg">
+                        <!-- 22 -->
+                        <img class="slides" src="images/landscapes/Come-walk-with-me-and-be-my-love-oil-spray-acrylic-on-100-x100cm-canvas-box-framed-in-white-%C2%A31250-SOLD.jpg">
+                        <!-- 23-->
+                        <img class="slides" src="images/landscapes/Following-in-your-footsteps-oil-spray-acrylic-60-x-60cm-box-framed-in-white-%C2%A3650-1.jpg">
+                        <!-- 24 -->
+                        <img class="slides" src="images/landscapes/For-thou-art-more-lovely-and-more-temporate-oil-spray-acrylic-100-x-100cm-box-framed-in-white-%C2%A31250.jpg">
+                        <!-- 25 -->
+                        <img class="slides" src="images/landscapes/Hanging-in-Creative-with-Nature-Gallery-Todmorden.jpg">
+                        <!-- 26 -->
+                        <img class="slides" src="images/landscapes/Never-stick-to-the-road-oil-spray-acrylic-60-x-60cm-framed-in-white-%C2%A3650.jpg">
+                        <!-- 27 -->
+                        <img class="slides" src="images/landscapes/2356-Sara-Abbott-Scotland.jpg">
+                        <!-- 28 -->
+                        <img class="slides" src="images/landscapes/2365-Sara-Abbott-Scotland.jpg">
+                        <!-- 29 -->
+                        <img class="slides" src="images/landscapes/2375-Sara-Abbott-Scotland.jpg">
+                        <!-- 30 -->
+                        <img class="slides" src="images/landscapes/2388-Sara-Abbott-Scotland.jpg">
+                        
+                        <!-- Column 3 -->
+                        <!-- 31 -->
+                        <img class="slides" src="images/landscapes/Our-side-of-the-valley-oil-spray-acrylic-100-x100cm-framed-in-white-%C2%A31250.jpg">
+                        <!-- 32 -->
+                        <img class="slides" src="images/landscapes/The-Autum-Before-oil-spray-acrylic-on-canvas-framed-%C2%A3600.jpg">
+                        <!-- 33 -->
+                        <img class="slides" src="images/landscapes/The-next-day-and-the-next-day-and-the-next-oil-spray-acrylic-100-x-120cm-box-framed-in-white-%C2%A31500-1.jpg">
+                        <!-- 34 -->
+                        <img class="slides" src="images/landscapes/The-Summer-Before-oil-spray-acrylic-on-canvas-framed-%C2%A3600.jpg">
+                        <!-- 35 -->
+                        <img class="slides" src="images/landscapes/The-Sun-is-low-at-this-time-of-year-oil-spray-acrylic-on-stainless-steel-100-x-100-%C2%A31250-SOLD-1.jpg">
+                        <!-- 36 -->
+                        <img class="slides" src="images/landscapes/The-wind-will-not-take-you-again-oil-spray-acrylic-100-x100cm-box-framed-in-white-%C2%A31250.jpg">
+                        <!-- 37 -->
+                        <img class="slides" src="images/landscapes/Then-and-now-and-always-diptic-oil-spray-acrylic-100-x-75-cm-box-framed-in-white-%C2%A31000.jp">
+                        <!-- 38 -->
+                        <img class="slides" src="images/landscapes/With-the-heady-scent-of-spring-oil-spray-acrylic-100-x-100cm-box-framed-in-white-%C2%A31250-SOLD.jpg">
+                        <!-- 39 -->
+                        <img class="slides" src="images/landscapes/scottish-landscape-2.jpg">
+                        <!-- 40 -->
+                        <img class="slides" src="images/landscapes/2358-Sara-Abbott-Scotland.jpg">
+                        <!-- 41 -->
+                        <img class="slides" src="images/landscapes/2360-Sara-Abbott-Scotland.jpg">
+                        <!-- 42 -->
+                        <img class="slides" src="images/landscapes/2362-Sara-Abbott-Scotland.jpg">
+                        <!-- 43 -->
+                        <img class="slides" src="images/landscapes/2376-Sara-Abbott-Scotland.jpg">
+                        <!-- 44 -->
+                        <img class="slides" src="images/landscapes/2384-Sara-Abbott-Scotland.jpg">
+                        <!-- 45 -->
+                        <img class="slides" src="images/landscapes/2386-Sara-Abbott-Scotland.jpg">
+                </div>
+            </div>
+    
+<div id="content-container">
+    <p>
+    Our time on Earth is short, by painting the landscape in situ I really connect with a space,  looking so hard for colour, tone, texture and temperature, imprinting a place in my core. One day, when it's not possible to visit these places I will be able to recall them by closing my eyes. But you can have the work now, to live with and to enjoy. 
+    <br><br>
+    I'm also very interested in creating landscape works to commission,  to hear clients' storytelling of why a place, a view is so special, sharing their passion for a place.
+    <br><br>
+    I've found a way to work landscapes in watercolour that pleases me, everyday in Aug 21 I created a new painting in this medium in the Scottish Highlands, there are plans to do the same in different places.
+    <br><br>
+    These paintings are sold from the studio, please request a list of available works.    
+    </p>
+</div>
+    
+<div class="row" id="image-grid">
+        <div class="col-sm-4" id="img_grid_col_1">
+        <img onclick="openModal(); currentSlide(1)" id="grid-img" src="images/landscapes/2.jpg" style="margin-bottom: 28px">
+        <img onclick="openModal(); currentSlide(2)" id="grid-img" src="images/landscapes/A-carved-path-oil-spray-acrylic-size-box-framed-in-white-%C2%A3950.jpg" style="margin-bottom: 28px">
+        <img onclick="openModal(); currentSlide(3)" id="grid-img" src="images/landscapes/12.jpg" style="margin-bottom: 28px">
+        <img onclick="openModal(); currentSlide(4)" id="grid-img" src="images/landscapes/14%20sm%20file.jpg" style="margin-bottom: 28px">
+        <img onclick="openModal(); currentSlide(5)" id="grid-img" src="images/landscapes/15.jpg" style="margin-bottom: 29px">
+        <img onclick="openModal(); currentSlide(6)" id="grid-img" src="images/landscapes/19.jpg" style="margin-bottom: 29px">
+        <img onclick="openModal(); currentSlide(7)" id="grid-img" src="images/landscapes/27.jpg" style="margin-bottom: 29px">
+        <img onclick="openModal(); currentSlide(8)" id="grid-img" src="images/landscapes/72dpi%20Hedgerow.jpg" style="margin-bottom: 29px">
+        <img onclick="openModal(); currentSlide(9)" id="grid-img" src="images/landscapes/2354-Sara-Abbott-Scotland.jpg" style="margin-bottom: 29px">
+        <img onclick="openModal(); currentSlide(10)" id="grid-img" src="images/landscapes/2359-Sara-Abbott-Scotland.jpg" style="margin-bottom: 29px">
+        <img onclick="openModal(); currentSlide(11)" id="grid-img" src="images/landscapes/2361-Sara-Abbott-Scotland.jpg" style="margin-bottom: 29px">
+        <img onclick="openModal(); currentSlide(12)" id="grid-img" src="images/landscapes/2363-Sara-Abbott-Scotland.jpg" style="margin-bottom: 29px">
+        <img onclick="openModal(); currentSlide(13)" id="grid-img" src="images/landscapes/2373-Sara-Abbott-Scotland.jpg" style="margin-bottom: 29px">
+        <img onclick="openModal(); currentSlide(14)" id="grid-img" src="images/landscapes/2378-Pano-2.jpg" style="margin-bottom: 29px">
+        <img onclick="openModal(); currentSlide(15)" id="grid-img" src="images/landscapes/2377-Sara-Abbott-Scotland.jpg" style="margin-bottom: 29px">
+        <img onclick="openModal(); currentSlide(16)" id="grid-img" src="images/landscapes/2381-Sara-Abbott-Scotland.jpg" style="margin-bottom: 20px">
+        </div>
+    
+        <div class="col-sm-4" id="img_grid_col_2">
+        <img onclick="openModal(); currentSlide(17)" id="grid-img" src="images/landscapes/2385-Sara-Abbott-Scotland.jpg" style="margin-bottom: 27px">
+        <img onclick="openModal(); currentSlide(18)" id="grid-img" src="images/landscapes/72dpi%20river%20perry.jpg" style="margin-bottom: 27px">
+        <img onclick="openModal(); currentSlide(19)" id="grid-img" src="images/landscapes/100060018_3002533109839433_2979171530493132800_n.jpg"style="margin-bottom: 27px">
+        <img onclick="openModal(); currentSlide(20)" id="grid-img" src="images/landscapes/100090001_3002532659839478_2444299350243803136_n.jpg"style="margin-bottom: 27px">
+        <img onclick="openModal(); currentSlide(21)" id="grid-img" src="images/landscapes/A-Memory-of-Bees-trip-tic-oil-spray-on-stainless-steel-each-part-12-inches-sq-plus-frame-%C2%A3750-SOLD.jpg" style="margin-bottom: 27px">
+        <img onclick="openModal(); currentSlide(22)" id="grid-img" src="images/landscapes/Come-walk-with-me-and-be-my-love-oil-spray-acrylic-on-100-x100cm-canvas-box-framed-in-white-%C2%A31250-SOLD.jpg" style="margin-bottom: 27px">
+        <img onclick="openModal(); currentSlide(23)" id="grid-img" src="images/landscapes/Following-in-your-footsteps-oil-spray-acrylic-60-x-60cm-box-framed-in-white-%C2%A3650-1.jpg" style="margin-bottom: 27px">
+        <img onclick="openModal(); currentSlide(24)" id="grid-img" src="images/landscapes/For-thou-art-more-lovely-and-more-temporate-oil-spray-acrylic-100-x-100cm-box-framed-in-white-%C2%A31250.jpg" style="margin-bottom: 27px">
+        <img onclick="openModal(); currentSlide(25)" id="grid-img" src="images/landscapes/Hanging-in-Creative-with-Nature-Gallery-Todmorden.jpg" style="margin-bottom: 27px">
+        <img onclick="openModal(); currentSlide(26)" id="grid-img" src="images/landscapes/Never-stick-to-the-road-oil-spray-acrylic-60-x-60cm-framed-in-white-%C2%A3650.jpg" style="margin-bottom: 27px">
+        <img onclick="openModal(); currentSlide(27)" id="grid-img" src="images/landscapes/2356-Sara-Abbott-Scotland.jpg" style="margin-bottom: 27px">
+        <img onclick="openModal(); currentSlide(28)" id="grid-img" src="images/landscapes/2365-Sara-Abbott-Scotland.jpg" style="margin-bottom: 26px">
+        <img onclick="openModal(); currentSlide(29)" id="grid-img" src="images/landscapes/2375-Sara-Abbott-Scotland.jpg" style="margin-bottom: 26px">
+        <img onclick="openModal(); currentSlide(30)" id="grid-img" src="images/landscapes/2388-Sara-Abbott-Scotland.jpg" style="margin-bottom: 20px">
+    </div>
+    
+    <div class="col-sm-4" id="img_grid_col_3">
+        <img onclick="openModal(); currentSlide(31)" id="grid-img" src="images/landscapes/Our-side-of-the-valley-oil-spray-acrylic-100-x100cm-framed-in-white-%C2%A31250.jpg" style="margin-bottom: 18px">
+        <img onclick="openModal(); currentSlide(32)" id="grid-img" src="images/landscapes/The-Autum-Before-oil-spray-acrylic-on-canvas-framed-%C2%A3600.jpg" style="margin-bottom: 18px">
+        <img onclick="openModal(); currentSlide(33)" id="grid-img" src="images/landscapes/The-next-day-and-the-next-day-and-the-next-oil-spray-acrylic-100-x-120cm-box-framed-in-white-%C2%A31500-1.jpg" style="margin-bottom: 18px">
+        <img onclick="openModal(); currentSlide(34)" id="grid-img" src="images/landscapes/The-Summer-Before-oil-spray-acrylic-on-canvas-framed-%C2%A3600.jpg" style="margin-bottom: 18px">
+        <img onclick="openModal(); currentSlide(35)" id="grid-img" src="images/landscapes/The-Sun-is-low-at-this-time-of-year-oil-spray-acrylic-on-stainless-steel-100-x-100-%C2%A31250-SOLD-1.jpg" style="margin-bottom: 18px">
+        <img onclick="openModal(); currentSlide(36)" id="grid-img" src="images/landscapes/The-wind-will-not-take-you-again-oil-spray-acrylic-100-x100cm-box-framed-in-white-%C2%A31250.jpg" style="margin-bottom: 18px">
+        <img onclick="openModal(); currentSlide(37)" id="grid-img" src="images/landscapes/Then-and-now-and-always-diptic-oil-spray-acrylic-100-x-75-cm-box-framed-in-white-%C2%A31000.jpg" style="margin-bottom: 18px">
+        <img onclick="openModal(); currentSlide(38)" id="grid-img" src="images/landscapes/With-the-heady-scent-of-spring-oil-spray-acrylic-100-x-100cm-box-framed-in-white-%C2%A31250-SOLD.jpg" style="margin-bottom: 18px">
+        <img onclick="openModal(); currentSlide(39)" id="grid-img" src="images/landscapes/scottish-landscape-2.jpg" style="margin-bottom: 18px">
+        <img onclick="openModal(); currentSlide(40)" id="grid-img" src="images/landscapes/2358-Sara-Abbott-Scotland.jpg" style="margin-bottom: 18px">
+        <img onclick="openModal(); currentSlide(41)" id="grid-img" src="images/landscapes/2360-Sara-Abbott-Scotland.jpg" style="margin-bottom: 18px">
+        <img onclick="openModal(); currentSlide(42)" id="grid-img" src="images/landscapes/2362-Sara-Abbott-Scotland.jpg" style="margin-bottom: 18px">
+        <img onclick="openModal(); currentSlide(43)" id="grid-img" src="images/landscapes/2376-Sara-Abbott-Scotland.jpg" style="margin-bottom: 18px">
+        <img onclick="openModal(); currentSlide(44)" id="grid-img" src="images/landscapes/2384-Sara-Abbott-Scotland.jpg" style="margin-bottom: 20px">
+        <img onclick="openModal(); currentSlide(45)" id="grid-img" src="images/landscapes/2386-Sara-Abbott-Scotland.jpg" style="margin-bottom: 20px">
+        </div>
+</div>
+
+<div class="container-fluid" id="gallery-link-container">
+        
+    <a href="domestic_animals.html" class="container reveal" id="portfolio-link">
+        <p id="portfolio-link-txt">Formal Oil on Canvas<br>Animal Portraits</p>
+            <img id="portfolio-link-img" src="images/domestic-animals/266121328_4609884332437628_6780042711911789456_n.jpg">
+    </a>
+
+    <a href="landscapes.html" class="container reveal" id="portfolio-link">
+        <p id="portfolio-link-txt">Landscapes</p>
+        <img id="portfolio-link-img" src="images/landscapes/Our-side-of-the-valley-oil-spray-acrylic-100-x100cm-framed-in-white-%C2%A31250.jpg">
+    </a>
+    
+    <a href="loose-sketches-on-paper.html" class="container reveal" id="portfolio-link">
+        <p id="portfolio-link-txt">Loose Sketches on Paper</p>
+        <img id="portfolio-link-img" src="images/loose-sketches-on-paper/129310503_3543463799079692_5568874541612744152_o.jpg">
+    </a>
+    
+    <a href="decorative_animals.html" class="container reveal" id="portfolio-link">
+        <p id="portfolio-link-txt">Decorative Birds and Animals</p>
+        <img id="portfolio-link-img" src="images/decorative-animals/Bella.jpg">
+    </a>
+    
+    <a href="human_figure.html" class="container reveal" id="portfolio-link">
+        <p id="portfolio-link-txt">Human Figure</p>
+            <img id="portfolio-link-img" src="images/human-figure/Plum-oil-on-canvas-20-x-20-inches-private-commission.jpg">
+    </a>
+    
+    <a href="gratitudes.html" class="container reveal" id="portfolio-link">
+        <p id="portfolio-link-txt">Gratitudes</p>
+        <img id="portfolio-link-img" src="images/Cernunnos.jpg">
+    </a>
+</div>
+<footer>
+<div id="footer-socials">
+    <img onclick="fbOpen()" id="social-link" src="images/icons/facebookicon.png">
+        <img onclick="instaOpen()" id="social-link" src="images/icons/instagramicon.png">
+            <a href="mailto:saraabbottstudio@gmail.com"><img id="mail-social-link" src="images/icons/emailicon.png"></a>
+                <a href="tel:+447766168027"><img id="social-link" src="images/icons/phone-icon.png"></a>
+</div>
+    
+        <p onclick="pagesOpen()" id="pages-link">Website designed by Pages by Ben</p>
+    
+</footer>
+    
+<script language="Javascript">
+function fbOpen() {
+    window.open("https://www.facebook.com/saraabbottstudio");
+}
+    
+function instaOpen() {
+    window.open("https://www.instagram.com/sara.abbott.studio/?hl=en")
+}
+    
+function pagesOpen() {
+    window.open("https://www.pagesbyben.com/");
+}
+    
+function openModal() {
+    document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal() {
+    document.getElementById("myModal").style.display = "none";
+}
+    
+var slideIndex = 1;
+showSlides(slideIndex);
+    
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+    
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+    
+function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("slides");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    
+slides[slideIndex-1].style.display = "block";
+}
+
+window.addEventListener('scroll', reveal);
+    
+function reveal(){
+    var reveals = document.querySelectorAll('.reveal');
+    
+    for(var i = 0; i < reveals.length; i++){
+        
+        var windowHeight = window.innerHeight;
+        var revealtop = reveals[i].getBoundingClientRect().top;
+        var revealpoint = 150;
+        
+        if(revealtop < windowHeight - revealpoint){
+            reveals[i].classList.add('active');
+        }
+        else{
+            reveals[i].classList.remove('active');
+        }
+    }
+}
+$(document).ready(function(){
+    $("#page-title").fadeIn(3000);
+});
+    
+$(document).ready(function(){
+    $("#content-container").slideDown(2000);
+});
+</script>   
+</body>
