@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <!-- Latest compiled and minified CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+            <!-- Latest compiled JavaScript -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+                <link rel="stylesheet" a href="stylesheet.css">
+<title>Gratitudes</title>
+</head>
+    
+<body>   
+<div id="nav-bar">
+    <p id="page-title">Gratitudes</p>
+        <a href="gallery.html"><p id="nav-bar-links">Home</p></a>
+
+    <div id="nav-bar-socials">
+    <img onclick="fbOpen()" id="social-link" src="images/icons/facebookicon2.png">
+    <img onclick="instaOpen()" id="social-link" src="images/icons/instagramicon2.png">
+    <a href="mailto:saraabbottstudio@gmail.com"><img id="mail-social-link" src="images/icons/emailicon2.png"></a>
+    <a href="tel:+447766168027"><img id="social-link" src="images/icons/phone-icon2.png"></a>
+</div>
+</div>
+    
+<div id="content-container">
+<div align="center"><img src="images/Cernunnos.jpg" id="cernunnos-pic" alt="cernunnos"></div>
+    
+    <p>
+    I find great fortune in the lightness of my life and by default the freedom it gives me to pass my gratitude on to the distant cousins of the dogs I paint (or any other animal or bird), the ones in dire straits. I'd either cry or punch if I was working at the pointy end of animal rescue but I can financially support those who do.  From each 'Formal Oil on Canvas' work I donate £100 and from the 'Loose Sketches on Paper' £25. I sometimes run campaigns with specific charities or organisations but over the years have built up a connection with lots of them, so now I send funds where the need is greatest at the time.  If a client has a particular connection with a rescue then I am delighted to send it that way in their animal's name.  I’m also keen to include donations for the protection of native British wildlife, habitat and to look at tree planting initiatives, especially through my landscape work.
+    </p>
+</div>
+    
+        <div id="myModal" class="modal">
+            <span class="close-cursor" onclick="closeModal()">&times;</span>
+            
+                <div class="modal-content">
+                    
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+                        <img class="slides" src="images/letters/letter1.jpg">
+                        <img class="slides" src="images/letters/letter2.jpg">
+                        <img class="slides" src="images/letters/letter3.jpg">
+                        <img class="slides" src="images/letters/letter4.jpg">
+                        <img class="slides" src="images/letters/letter5.jpg">
+                        <img class="slides" src="images/letters/letter6.jpg">
+                        <img class="slides" src="images/letters/letter7.jpg">
+                </div>
+        </div>
+            
+                    <div class="row" id="image-grid">
+                        <div class="col-sm-4" id="image-grid-column-1">
+                            <img onclick="openModal(); currentSlide(1)" id="grid-img" src="images/letters/letter1.jpg" style="margin-bottom: 20px">
+                            <img onclick="openModal(); currentSlide(2)" id="grid-img" src="images/letters/letter2.jpg"
+                            style="margin-bottom: 20px">
+                        </div>
+                        
+                        <div class="col-sm-4" id="image-grid-column-2">
+                            <img onclick="openModal(); currentSlide(3)" id="grid-img" src="images/letters/letter3.jpg"
+                            style="margin-bottom: 20px">
+                            <img onclick="openModal(); currentSlide(4)" id="grid-img" src="images/letters/letter4.jpg" style="margin-bottom: 20px">
+                            <img onclick="openModal(); currentSlide(7)" id="grid-img" src="images/letters/letter7.jpg" style="margin-bottom: 20px">
+                        </div>
+                        
+                        <div class="col-sm-4" id="image-grid-column-3">
+                            <img onclick="openModal(); currentSlide(5)" id="grid-img" src="images/letters/letter5.jpg" style="margin-bottom: 20px">
+                            <img onclick="openModal(); currentSlide(6)" id="grid-img" src="images/letters/letter6.jpg" style="margin-bottom: 20px">
+                        </div>
+                    </div>
+
+<div id="gallery-link-container">
+        
+    <a href="domestic_animals.html" class="container reveal" id="portfolio-link">
+        <p id="portfolio-link-txt">Formal Oil on Canvas<br>Animal Portraits</p>
+            <img id="portfolio-link-img" src="images/domestic-animals/266121328_4609884332437628_6780042711911789456_n.jpg">
+    </a>
+
+    <a href="landscapes.html" class="container reveal" id="portfolio-link">
+        <p id="portfolio-link-txt">Landscapes</p>
+        <img id="portfolio-link-img" src="images/landscapes/Our-side-of-the-valley-oil-spray-acrylic-100-x100cm-framed-in-white-%C2%A31250.jpg">
+    </a>
+    
+    <a href="loose-sketches-on-paper.html" class="container reveal" id="portfolio-link">
+        <p id="portfolio-link-txt">Loose Sketches on Paper</p>
+        <img id="portfolio-link-img" src="images/loose-sketches-on-paper/129310503_3543463799079692_5568874541612744152_o.jpg">
+    </a>
+    
+    <a href="decorative_animals.html" class="container reveal" id="portfolio-link">
+        <p id="portfolio-link-txt">Decorative Birds and Animals</p>
+        <img id="portfolio-link-img" src="images/decorative-animals/Bella.jpg">
+    </a>
+    
+    <a href="human_figure.html" class="container reveal" id="portfolio-link">
+        <p id="portfolio-link-txt">Human Figure</p>
+            <img id="portfolio-link-img" src="images/human-figure/Plum-oil-on-canvas-20-x-20-inches-private-commission.jpg">
+    </a>
+    
+    <a href="gratitudes.html" class="container reveal" id="portfolio-link">
+        <p id="portfolio-link-txt">Gratitudes</p>
+        <img id="portfolio-link-img" src="images/Cernunnos.jpg">
+    </a>
+    
+    <a href="a3-watercolours.html" class="container reveal" id="portfolio-link">
+        <p id="portfolio-link-txt">A-3 Watercolours</p>
+        <img id="portfolio-link-img" src="images/watercolour-pet-portraits/20220209_121209.jpg">
+    </a>
+    
+    <a href="return_to_the_valley.html" class="container reveal" id="portfolio-link">
+        <p id="portfolio-link-txt">Return to the Valley Exhibition</p>
+        <img id="portfolio-link-img" src="images/Return-to-the-Valley-Exhibition-June-22/20220407_121359.jpg">
+    </a>
+
+    <a href="writings.html" class="container reveal" id="portfolio-link">
+        <p id="portfolio-link-txt">Writings</p>
+        <img id="portfolio-link-img" src="images/writings/a.jpg">
+    </a>
+</div>
+<footer>
+<div id="footer-socials">
+    <img onclick="fbOpen()" id="social-link" src="images/icons/facebookicon.png">
+        <img onclick="instaOpen()" id="social-link" src="images/icons/instagramicon.png">
+            <a href="mailto:saraabbottstudio@gmail.com"><img id="mail-social-link" src="images/icons/emailicon.png"></a>
+                <a href="tel:+447766168027"><img id="social-link" src="images/icons/phone-icon.png"></a>
+</div>
+    
+            <p onclick="pagesOpen()" id="pages-link">Website designed by Pages by Ben</p>
+    
+</footer>
+
+<script language="Javascript">
+function fbOpen() {
+window.open("https://www.facebook.com/saraabbottstudio");
+}
+    
+function instaOpen() {
+window.open("https://www.instagram.com/sara.abbott.studio/?hl=en");
+}
+
+function pagesOpen() {
+    window.open("https://www.pagesbyben.com/");
+}
+    
+function openModal() {
+    document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal() {
+    document.getElementById("myModal").style.display = "none";
+}
+    
+var slideIndex = 1;
+showSlides(slideIndex);
+    
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+    
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+    
+function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("slides");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    
+slides[slideIndex-1].style.display = "block";
+}
+    
+window.addEventListener('scroll', reveal);
+    
+function reveal(){
+    var reveals = document.querySelectorAll('.reveal');
+    
+    for(var i = 0; i < reveals.length; i++){
+        
+        var windowHeight = window.innerHeight;
+        var revealtop = reveals[i].getBoundingClientRect().top;
+        var revealpoint = 150;
+        
+        if(revealtop < windowHeight - revealpoint){
+            reveals[i].classList.add('active');
+        }
+        else{
+            reveals[i].classList.remove('active');
+        }
+    }
+}
+    
+$(document).ready(function(){
+    $("#page-title").fadeIn(3000);
+});
+
+$(document).ready(function(){
+    $("#content-container").slideDown(3000);
+});
+    
+</script>  
+</body>
